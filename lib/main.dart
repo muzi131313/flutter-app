@@ -20,7 +20,15 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'First APP'),
+      routes: {
+        "/": (context) => MyHomePage(title: 'First APP'),
+        "new_page": (context) {
+          return NewRoute(
+            text: ModalRoute.of(context).settings.arguments,
+          );
+        },
+      },
+      initialRoute: "/",
     );
   }
 }
@@ -36,6 +44,8 @@ class NewRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // 获取路由参数
+    // var text = ModalRoute.of(context).settings.arguments;
     return Scaffold(
       appBar: AppBar(
         title: Text("New route"),
@@ -136,16 +146,22 @@ class _MyHomePageState extends State<MyHomePage> {
               textColor: Colors.blue,
               onPressed: () async {
                 //导航到新路由
-                var result = await Navigator.push(
+                // var result = await Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) {
+                //       return NewRoute(
+                //         // 传入路由参数
+                //         text: "我是新对象",
+                //       );
+                //     },
+                //   ),
+                // );
+                // 使用路由名称加载新路由
+                var result = await Navigator.pushNamed(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return NewRoute(
-                        // 传入路由参数
-                        text: "我是新对象",
-                      );
-                    },
-                  ),
+                  "new_page",
+                  arguments: "我是新对象",
                 );
                 // 拿到路由返回的值
                 print("路由的值: $result");
