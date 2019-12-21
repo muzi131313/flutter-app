@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:english_words/english_words.dart';
 
 void main() => runApp(MyApp());
 
@@ -42,6 +43,9 @@ class NewRoute extends StatelessWidget {
 
   final String text;
 
+  // 生成随机字符串
+  final wordPair = new WordPair.random();
+
   @override
   Widget build(BuildContext context) {
     // 获取路由参数
@@ -56,6 +60,7 @@ class NewRoute extends StatelessWidget {
           child: Column(children: <Widget>[
             Text("This is new route"),
             Text(text),
+            Text(wordPair.toString()),
             RaisedButton(
               // 回传给上一个页面参数
               onPressed: () => Navigator.pop(context, "我是返回值"),
