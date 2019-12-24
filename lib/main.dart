@@ -3,9 +3,10 @@ import 'examples/counter/entry.dart';
 import 'examples/router/entry.dart';
 import 'examples/login/entry.dart';
 import 'examples/card-list/entry.dart';
+import 'examples/scan-qrcode/entry.dart';
 
 void main() {
-  int num = 4;
+  int num = 5;
   switch (num) {
     case 0:
       // demo: 聊天室
@@ -20,10 +21,16 @@ void main() {
       appRouterInit();
       break;
     case 3:
+      // 登陆页面
       appLoginInit();
       break;
     case 4:
+      // 卡片列表
       appCardListInit();
+      break;
+    case 5:
+      // 扫描二维码
+      appScanQRCodeInit();
       break;
   }
 }
