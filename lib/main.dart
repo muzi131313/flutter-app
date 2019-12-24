@@ -4,6 +4,7 @@ import 'examples/router/entry.dart';
 import 'examples/login/entry.dart';
 import 'examples/card-list/entry.dart';
 import 'examples/scan-qrcode/entry.dart';
+import 'examples/camera/entry.dart';
 
 void main() {
   int num = 5;
@@ -21,16 +22,20 @@ void main() {
       appRouterInit();
       break;
     case 3:
-      // 登陆页面
+      // demo: 登陆页面
       appLoginInit();
       break;
     case 4:
-      // 卡片列表
+      // demo: 卡片列表
       appCardListInit();
       break;
     case 5:
-      // 扫描二维码
+      // demo: 扫描二维码
       appScanQRCodeInit();
+      break;
+    case 6:
+      // demo: 摄像头
+      appCameraInit();
       break;
   }
 }
