@@ -7,7 +7,7 @@ import 'examples/scan-qrcode/entry.dart';
 import 'examples/camera/entry.dart';
 
 void main() {
-  int num = 5;
+  int num = 1;
   switch (num) {
     case 0:
       // demo: 聊天室

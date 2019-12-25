@@ -1,0 +1,19 @@
+name: flutter-app
+description: Different flutter examples.
+version: 0.0.1
+author: roastwind <roastwind@163.com>
+homepage: https://github.com/muzi131313/flutter-app
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+environment:
+  sdk: '>=2.1.0 <3.0.0'
+  flutter: '>=1.13.0 <3.0.0'
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
