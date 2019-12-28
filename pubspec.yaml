@@ -30,13 +30,13 @@ dependencies:
   # 存放图片用的
   shrine_images: ^1.1.1
   # 扫码二维码
-  barcode_scan: ^1.0.0
+  # barcode_scan: ^1.0.0
   # 摄像头
-  camera: 0.5.7+2
+  # camera: 0.5.7+2
   # 路径
   path_provider:
   # 视频播放
-  video_player:
+  # video_player:
 
 dev_dependencies:
   flutter_test:

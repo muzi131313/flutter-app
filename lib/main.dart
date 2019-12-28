@@ -3,8 +3,8 @@ import 'examples/counter/entry.dart';
 import 'examples/router/entry.dart';
 import 'examples/login/entry.dart';
 import 'examples/card-list/entry.dart';
-import 'examples/scan-qrcode/entry.dart';
-import 'examples/camera/entry.dart';
+// import 'examples/scan-qrcode/entry.dart';
+// import 'examples/camera/entry.dart';
 
 void main() {
   int num = 1;
@@ -31,11 +31,11 @@ void main() {
       break;
     case 5:
       // demo: 扫描二维码
-      appScanQRCodeInit();
+      // appScanQRCodeInit();
       break;
     case 6:
       // demo: 摄像头
-      appCameraInit();
+      // appCameraInit();
       break;
   }
 }
