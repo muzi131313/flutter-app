@@ -8,7 +8,7 @@ import 'examples/card-list/entry.dart';
 import 'examples/event/entry.dart';
 
 void main() {
-  int num = 7;
+  int num = 8;
   switch (num) {
     case 0:
       // demo: 聊天室
@@ -39,7 +39,12 @@ void main() {
       // appCameraInit();
       break;
     case 7:
-      appEventInit();
+      // 原始事件
+      appEventInit('eventType');
+      break;
+    case 8:
+      // 拖动
+      appEventInit('drag');
       break;
   }
 }
