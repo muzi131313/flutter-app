@@ -34,3 +34,27 @@ samples, guidance on mobile development, and a full API reference.
   - model
 - [event](./lib/examples/event/entry.dart): 事件
   - Listener: 原始事件
+- [l10n](./lib/examples/l10n/entry.dart): 多语言
+  - [website/intl_example](https://github.com/flutter/website/blob/master/examples/internationalization/intl_example/lib/main.dart): 官方示例
+  - [intl_translation](https://pub.dev/packages/intl_translation): 从代码中提取要国际化的**字符串**到单独的 arb 文件和根据 arb 文件生成对应语言的 dart 代码
+    - 生成 arb 文件:
+      - 官方文档: `flutter pub pub run intl_translation:extract_to_arb --output-dir=lib/examples/l10n/l10n lib/examples/l10n/entry.dart`
+    - 生成 dart 代码:
+      - 官方文档: `flutter pub pub run intl_translation:generate_from_arb --generated-file-prefix=<prefix> <my_dart_files> <translated_ARB_files>`
+      - 实际应用: `flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/examples/l10n/i10n --no-use-deferred-loading`
+    - 项目生成 shell 文件: [intl.sh](./intl.sh)
+      - 重新生成【字体】以及【dart 代码】： `sh intl.sh`
+    - API:
+      - `--generated-file-prefix`: 生成前缀
+      - `--output-dir`: 生成目录
+      - `--no-use-deferred-loading`: 不延迟加载
+      - `intl_translation:generate_from_arb`: 从 arb 文件生成 dart 代码
+      - `intl_translation:extract_to_arb`: 从语言代码抽离 arb 文件
+    - 知识点:
+      - `i10-arb\intl_messages.arb`: 默认字体文件
+        - 此文件动态生成，每次重新生成，会更新次文件
+        - i10n 托底政策，其他字体文件不可用时，会使用此文件
+      - `i10-arb\intl_zh_CN.arb`: 中文字体文件
+        - 重新生成，不会覆盖此文件
+        - 会根据此文件，动态生成 `messages_zh_CN.dart` 文件
+        - 此文件需要增加 `"@@locale": "zh_CN",` 属性，用来识别、匹配当前文件

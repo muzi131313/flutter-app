@@ -6,9 +6,10 @@ import 'examples/card-list/entry.dart';
 // import 'examples/scan-qrcode/entry.dart';
 // import 'examples/camera/entry.dart';
 import 'examples/event/entry.dart';
+import 'examples/l10n/entry.dart';
 
 void main() {
-  int num = 8;
+  int num = 9;
   switch (num) {
     case 0:
       // demo: 聊天室
@@ -45,6 +46,9 @@ void main() {
     case 8:
       // 拖动
       appEventInit('drag');
+      break;
+    case 9:
+      appl10nInit();
       break;
   }
 }
