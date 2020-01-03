@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_redux/flutter_redux.dart';
+
 import '../i10n/localization_intl.dart';
+import '../actions.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -10,11 +13,14 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<StatefulWidget> {
+  bool flag = false;
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: Text('SHRINE'),
+        title: Text(DemoLocalizations.of(context).title),
+        // title: Text('SHRINE'),
         leading: IconButton(
           icon: Icon(
             Icons.menu,
@@ -33,6 +39,22 @@ class _LoginPageState extends State<StatefulWidget> {
               height: 80.0,
             ),
             Text(DemoLocalizations.of(context).title),
+            SizedBox(
+              height: 20.0,
+            ),
+            StoreConnector<bool, VoidCallback>(
+              converter: (store) {
+                // Return a `VoidCallback`, which is a fancy name for a function
+                // with no parameters. It only dispatches an Increment action.
+                return () => store.dispatch(MyActions.ChangeLanguage);
+              },
+              builder: (context, callback) {
+                return RaisedButton(
+                  child: Text('change language'),
+                  onPressed: callback,
+                );
+              },
+            ),
             SizedBox(
               height: 20.0,
             ),

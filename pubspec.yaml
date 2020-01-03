@@ -41,6 +41,10 @@ dependencies:
   # 视频播放
   # video_player:
 
+  # 状态管理
+  flutter_redux:
+  redux:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
