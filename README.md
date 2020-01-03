@@ -58,3 +58,14 @@ samples, guidance on mobile development, and a full API reference.
         - 重新生成，不会覆盖此文件
         - 会根据此文件，动态生成 `messages_zh_CN.dart` 文件
         - 此文件需要增加 `"@@locale": "zh_CN",` 属性，用来识别、匹配当前文件
+- [redux](./lib/examples/redux/entry.dart): redux 应用
+  - 对比 [counter](https://github.com/brianegan/flutter_redux/blob/master/example/counter/lib/main.dart) 示例，增加了属性的示例
+  - 参考 [flutter-redux-todo-list](https://github.com/xqwzts/flutter-redux-todo-list) 示例，有详细应用
+  - 模块划分
+    - model: 包括
+      - 模型
+      - state
+    - reducer
+    - ModelView
+      - state 和 view 绑定
+      - view 中行为(按钮事件)触发相应的 action
