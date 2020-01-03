@@ -7,9 +7,10 @@ import 'examples/card-list/entry.dart';
 // import 'examples/camera/entry.dart';
 import 'examples/event/entry.dart';
 import 'examples/l10n/entry.dart';
+import 'examples/redux/entry.dart';
 
 void main() {
-  int num = 9;
+  int num = 10;
   switch (num) {
     case 0:
       // demo: 聊天室
@@ -48,7 +49,12 @@ void main() {
       appEventInit('drag');
       break;
     case 9:
+      // 国际化
       appl10nInit();
+      break;
+    case 10:
+      // redux示例(count)
+      reduxAppInit();
       break;
   }
 }
