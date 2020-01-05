@@ -29,6 +29,7 @@ dependencies:
   # 新添加的依赖
   english_words: ^3.1.5
   # 通讯库
+  # 国际化
   intl: ^0.16.0
   # 存放图片用的
   shrine_images: ^1.1.1
