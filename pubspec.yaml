@@ -45,6 +45,13 @@ dependencies:
   # 状态管理
   flutter_redux:
   redux:
+  # 与原生通讯: 电池示例
+  # batterylevel:
+  #   path: ../flutter-packages/packages/batterylevel
+  batterylevel:
+    git:
+      url: git@github.com:muzi131313/flutter-packages.git
+      path: packages/batterylevel
 
 dev_dependencies:
   flutter_test:

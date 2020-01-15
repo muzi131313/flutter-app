@@ -8,9 +8,10 @@ import 'examples/card-list/entry.dart';
 import 'examples/event/entry.dart';
 import 'examples/l10n/entry.dart';
 import 'examples/redux/entry.dart';
+import 'examples/communicate/entry.dart';
 
 void main() {
-  int num = 10;
+  int num = 11;
   switch (num) {
     case 0:
       // demo: 聊天室
@@ -55,6 +56,10 @@ void main() {
     case 10:
       // redux示例(count)
       reduxAppInit();
+      break;
+    case 11:
+      // 和原生通信示例
+      communicateInit();
       break;
   }
 }
