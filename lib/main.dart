@@ -1,3 +1,5 @@
+import 'package:myapp/examples/layout/entry.dart';
+
 import 'examples/chart-room/entry.dart';
 import 'examples/counter/entry.dart';
 import 'examples/router/entry.dart';
@@ -8,10 +10,10 @@ import 'examples/card-list/entry.dart';
 import 'examples/event/entry.dart';
 import 'examples/l10n/entry.dart';
 import 'examples/redux/entry.dart';
-import 'examples/communicate/entry.dart';
+// import 'examples/communicate/entry.dart';
 
 void main() {
-  int num = 11;
+  int num = 12;
   switch (num) {
     case 0:
       // demo: 聊天室
@@ -59,7 +61,11 @@ void main() {
       break;
     case 11:
       // 和原生通信示例
-      communicateInit();
+      // communicateInit();
+      break;
+    case 12:
+      // align布局
+      layoutInit();
       break;
   }
 }

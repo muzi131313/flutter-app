@@ -1,58 +1,27 @@
 PODS:
-  - barcode_scan (0.0.1):
-    - Flutter
-    - MTBBarcodeScanner
   - batterylevel (0.0.1):
     - Flutter
-  - camera (0.0.1):
-    - Flutter
   - Flutter (1.0.0)
-  - MTBBarcodeScanner (5.0.11)
   - path_provider (0.0.1):
-    - Flutter
-  - video_player (0.0.1):
-    - Flutter
-  - video_player_web (0.0.1):
     - Flutter
 
 DEPENDENCIES:
-  - barcode_scan (from `.symlinks/plugins/barcode_scan/ios`)
   - batterylevel (from `.symlinks/plugins/batterylevel/ios`)
-  - camera (from `.symlinks/plugins/camera/ios`)
   - Flutter (from `Flutter`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
-  - video_player (from `.symlinks/plugins/video_player/ios`)
-  - video_player_web (from `.symlinks/plugins/video_player_web/ios`)
-
-SPEC REPOS:
-  trunk:
-    - MTBBarcodeScanner
 
 EXTERNAL SOURCES:
-  barcode_scan:
-    :path: ".symlinks/plugins/barcode_scan/ios"
   batterylevel:
     :path: ".symlinks/plugins/batterylevel/ios"
-  camera:
-    :path: ".symlinks/plugins/camera/ios"
   Flutter:
     :path: Flutter
   path_provider:
     :path: ".symlinks/plugins/path_provider/ios"
-  video_player:
-    :path: ".symlinks/plugins/video_player/ios"
-  video_player_web:
-    :path: ".symlinks/plugins/video_player_web/ios"
 
 SPEC CHECKSUMS:
-  barcode_scan: 33f586d02270046fc6559135038b34b5754eaa4f
   batterylevel: daf3dfcb14cf09dbfc98e4c779bc455d5482198b
-  camera: 38cc83ae9a5667bb5a71c7d9edaf60a91920fd4e
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  MTBBarcodeScanner: f453b33c4b7dfe545d8c6484ed744d55671788cb
   path_provider: fb74bd0465e96b594bb3b5088ee4a4e7bb1f2a9d
-  video_player: 69c5f029fac4ffe4fc8a85ea7f7b793709661549
-  video_player_web: da8cadb8274ed4f8dbee8d7171b420dedd437ce7
 
 PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
 

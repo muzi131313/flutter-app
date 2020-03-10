@@ -29,15 +29,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.4.0"
-  batterylevel:
-    dependency: "direct main"
-    description:
-      path: "packages/batterylevel"
-      ref: HEAD
-      resolved-ref: "3b342c9d5268631bcf9a3bbb9c77999bc24cada6"
-      url: "git@github.com:muzi131313/flutter-packages.git"
-    source: git
-    version: "0.0.1"
   boolean_selector:
     dependency: transitive
     description:
@@ -157,7 +148,7 @@ packages:
       name: intl
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.16.1"
+    version: "0.16.0"
   intl_translation:
     dependency: "direct dev"
     description:
@@ -360,5 +351,5 @@ packages:
     source: hosted
     version: "2.2.0"
 sdks:
-  dart: ">=2.5.0 <3.0.0"
+  dart: ">=2.4.0 <3.0.0"
   flutter: ">=1.10.0 <2.0.0"
