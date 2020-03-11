@@ -40,15 +40,27 @@ class _LoginPageState extends State<StatefulWidget> {
     final Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Container(
-        height: size.height + 100,
-        width: size.width,
-        child: Align(
-          alignment: Alignment(0.2, 0.3),
-          child: FlutterLogo(
-            size: 60,
-          ),
-        ),
-      ),
+          height: size.height + 100,
+          width: size.width,
+          child: Stack(children: <Widget>[
+            // Container(
+            //   height: size.height + 100,
+            //   width: size.width,
+            //   child: Text('123444'),
+            // ),
+            Align(
+              alignment: Alignment(0, -1),
+              child: FlutterLogo(
+                size: 30,
+              ),
+            ),
+            Align(
+              alignment: Alignment(0.2, 0.5),
+              child: FlutterLogo(
+                size: 60,
+              ),
+            ),
+          ])),
     );
   }
 }
