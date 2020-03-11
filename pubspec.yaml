@@ -70,6 +70,21 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/diamond.png
+    - assets/flip/1.jpg
+    - assets/flip/2.jpg
+    - assets/flip/3.jpg
+    - assets/flip/4.jpeg
+    - assets/flip/5.jpg
+    - assets/flip/6.jpg
+    - assets/flip/7.jpg
+    - assets/flip/8.jpeg
+    - assets/flip/9.jpg
+    - assets/flip/10.jpeg
+    - assets/flip/11.jpg
+    - assets/flip/12.jpg
+    - assets/flip/13.jpg
+    - assets/flip/14.jpg
+    - assets/flip/15.jpg
     - packages/shrine_images/0-0.jpg
     - packages/shrine_images/1-0.jpg
     - packages/shrine_images/2-0.jpg

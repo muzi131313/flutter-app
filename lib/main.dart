@@ -1,4 +1,5 @@
 import 'package:myapp/examples/layout/entry.dart';
+import 'package:myapp/examples/swiper/entry.dart';
 
 import 'examples/chart-room/entry.dart';
 import 'examples/counter/entry.dart';
@@ -13,7 +14,7 @@ import 'examples/redux/entry.dart';
 // import 'examples/communicate/entry.dart';
 
 void main() {
-  int num = 12;
+  int num = 13;
   switch (num) {
     case 0:
       // demo: 聊天室
@@ -66,6 +67,10 @@ void main() {
     case 12:
       // align布局
       layoutInit();
+      break;
+    case 13:
+      // 轮播图
+      swiperInit();
       break;
   }
 }

@@ -69,6 +69,12 @@ samples, guidance on mobile development, and a full API reference.
     - ModelView
       - state 和 view 绑定
       - view 中行为(按钮事件)触发相应的 action
+- [layout](./lib/examples/swiper/entry.dart): align 布局
+  - 应用场景: 滚动时相对定位
+- [swiper](./lib/examples/swiper/entry.dart): 轮播图
+  - 预计目标:
+    - [ ] 左右滑动
+    - [ ] 图片缩放
 
 ## 工具
 
