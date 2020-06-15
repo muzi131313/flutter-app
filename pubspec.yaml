@@ -38,20 +38,18 @@ dependencies:
   # 摄像头
   camera: 0.5.7+2
   # 路径
-  path_provider:
+  path_provider: ^1.6.10
   # 视频播放
-  video_player:
+  video_player: ^0.10.11+1
 
   # 状态管理
-  flutter_redux:
-  redux:
+  flutter_redux: ^0.6.0
+  redux: ^4.0.0
   # 与原生通讯: 电池示例
   # batterylevel:
-  #   path: ../flutter-packages/packages/batterylevel
-  batterylevel:
-    git:
-      url: git@github.com:muzi131313/flutter-packages.git
-      path: packages/batterylevel
+  #   git:
+  #     url: git@github.com:muzi131313/flutter-packages.git
+  #     path: packages/batterylevel
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +68,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/diamond.png
+    - assets/image-slide/one.jpg
+    - assets/image-slide/two.jpg
+    - assets/image-slide/three.jpg
+    - assets/image-slide/four.jpg
+    - assets/image-slide/five.jpg
     - assets/flip/1.jpg
     - assets/flip/2.jpg
     - assets/flip/3.jpg

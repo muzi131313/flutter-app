@@ -43,15 +43,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.0"
-  batterylevel:
-    dependency: "direct main"
-    description:
-      path: "packages/batterylevel"
-      ref: HEAD
-      resolved-ref: "8382067d06b5239ad9e174b02fb0b2ae74f68e02"
-      url: "git@github.com:muzi131313/flutter-packages.git"
-    source: git
-    version: "0.0.1"
   boolean_selector:
     dependency: transitive
     description:

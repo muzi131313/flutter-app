@@ -1,3 +1,4 @@
+import 'package:myapp/examples/image-slide/entry.dart';
 import 'package:myapp/examples/layout/entry.dart';
 import 'package:myapp/examples/swiper/entry.dart';
 
@@ -6,15 +7,15 @@ import 'examples/counter/entry.dart';
 import 'examples/router/entry.dart';
 import 'examples/login/entry.dart';
 import 'examples/card-list/entry.dart';
-// import 'examples/scan-qrcode/entry.dart';
-// import 'examples/camera/entry.dart';
+import 'examples/scan-qrcode/entry.dart';
+import 'examples/camera/entry.dart';
 import 'examples/event/entry.dart';
 import 'examples/l10n/entry.dart';
 import 'examples/redux/entry.dart';
 // import 'examples/communicate/entry.dart';
 
 void main() {
-  int num = 13;
+  int num = 14;
   switch (num) {
     case 0:
       // demo: 聊天室
@@ -38,11 +39,11 @@ void main() {
       break;
     case 5:
       // demo: 扫描二维码
-      // appScanQRCodeInit();
+      appScanQRCodeInit();
       break;
     case 6:
       // demo: 摄像头
-      // appCameraInit();
+      appCameraInit();
       break;
     case 7:
       // 原始事件
@@ -71,6 +72,9 @@ void main() {
     case 13:
       // 轮播图
       swiperInit();
+      break;
+    case 14:
+      imageSlideInit();
       break;
   }
 }
