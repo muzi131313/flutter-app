@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // import 'package:flutter/services.dart';
-import 'package:batterylevel/batterylevel.dart';
+// import 'package:batterylevel/batterylevel.dart';
 
 void communicateInit() {
   runApp(MyApp());
@@ -35,8 +35,10 @@ class _MyHomePageState extends State<MyHomePage> {
   String _platformVersion = 'Unknown platform version.';
 
   Future<Null> _getBatteryLevel() async {
-    String platformVersion = await Batterylevel.platformVersion;
-    String batteryLevel = await Batterylevel.batteryLevel;
+    // String platformVersion = await Batterylevel.platformVersion;
+    // String batteryLevel = await Batterylevel.batteryLevel;
+    String platformVersion = 'test';
+    String batteryLevel = 'test';
 
     setState(() {
       _batteryLevel = batteryLevel;

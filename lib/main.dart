@@ -8,7 +8,7 @@ import 'examples/router/entry.dart';
 import 'examples/login/entry.dart';
 import 'examples/card-list/entry.dart';
 import 'examples/scan-qrcode/entry.dart';
-import 'examples/camera/entry.dart';
+// import 'examples/camera/entry.dart';
 import 'examples/event/entry.dart';
 import 'examples/l10n/entry.dart';
 import 'examples/redux/entry.dart';
@@ -43,7 +43,7 @@ void main() {
       break;
     case 6:
       // demo: 摄像头
-      appCameraInit();
+      // appCameraInit();
       break;
     case 7:
       // 原始事件

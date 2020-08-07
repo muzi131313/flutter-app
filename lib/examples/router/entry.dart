@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+// import 'package:english_words/english_words.dart';
 
 void appRouterInit() {
   runApp(MyApp());
@@ -46,7 +46,7 @@ class NewRoute extends StatelessWidget {
   final String text;
 
   // 生成随机字符串
-  final wordPair = new WordPair.random();
+  final wordPair = 'test'; //generateWordPairs();
 
   @override
   Widget build(BuildContext context) {

@@ -34,7 +34,7 @@ dependencies:
   # 存放图片用的
   shrine_images: ^1.1.1
   # 扫码二维码
-  barcode_scan: ^1.0.0
+  barcode_scan: ^3.0.1
   # 摄像头
   camera: 0.5.7+2
   # 路径
@@ -46,10 +46,10 @@ dependencies:
   flutter_redux: ^0.6.0
   redux: ^4.0.0
   # 与原生通讯: 电池示例
-  # batterylevel:
-  #   git:
-  #     url: git@github.com:muzi131313/flutter-packages.git
-  #     path: packages/batterylevel
+  batterylevel: ^0.0.1
+    # git:
+    #   url: git@github.com:muzi131313/flutter-packages.git
+    #   path: packages/batterylevel
 
 dev_dependencies:
   flutter_test:
